@@ -6,3 +6,6 @@ Higher level programming languges are include in this project repo
 - JavaScript
 - CSS and HTML
 - Mysql
+
+## Directories included in the repo
+- 0x00. Python - Hello, World
