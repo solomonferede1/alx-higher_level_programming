@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    def print_list_integer(my_list=[]):
-        for lst in my_list:
-            print("{:d}".format(lst))
+def print_list_integer(my_list=[]):
+    max = len(my_list)
+    for i in range(max):
+        print("{:d}".format(my_list[i]))
