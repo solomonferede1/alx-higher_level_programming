@@ -57,6 +57,8 @@ class Rectangle:
         '''Retur the string representation of the object'''
 
         string = ''
+        if self.__width == 0:
+            return string
         for i in range(self.__height):
             string += self.__width * '#'
             if i != self.height - 1:
