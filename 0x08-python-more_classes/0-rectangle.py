@@ -4,5 +4,5 @@
 
 
 def Rectangle():
-    '''define an empty class Rectangle'''
+    '''Define an empty Rectangle class'''
     pass
