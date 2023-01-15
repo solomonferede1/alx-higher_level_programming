@@ -3,6 +3,6 @@
 '''This module defines an empty class Rectangle'''
 
 
-def Rectangle():
+class Rectangle():
     '''Define an empty Rectangle class'''
     pass
