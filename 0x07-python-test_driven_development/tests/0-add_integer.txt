@@ -1,0 +1,98 @@
+===============================
+ The ``0-add_integer`` module
+===============================
+
+This file is a simple test file to test the module ``0-add_integer```.
+
+My ``add_integer()`` returns the sum of two integers. For posetive numbers. To use first import the module ``0-add_integer`` from the ``add_integer`` module as:
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Then use as:
+
+Testing posetive numbers
+========================
+
+>>> add_integer(0, 1)
+1
+>>> add_integer(0, 0)
+0
+>>> add_integer(10, 0)
+10
+>>> add_integer(10, 56)
+66
+>>> add_integer(10000, 10000000000000000000)
+10000000000000010000
+
+Testing large posetive numbers
+==============================
+
+>>> add_integer(10e1000, 56)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/solomon/Desktop/ALX-software_engineering/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 11, in add_integer
+    return (int(a) + int(b))
+OverflowError: cannot convert float infinity to integer
+
+Testing posetive floating point numbers
+=======================================
+
+>>> add_integer(0.88)
+98
+>>> add_integer(0.88, 99.5)
+99
+
+Testing negative numbers
+========================
+
+>>> add_integer(81, -7)
+74
+>>> add_integer(81, -17)
+64
+>>> add_integer(-81, -17)
+-98
+>>> add_integer(-9999999981, -17)
+-9999999998
+>>> add_integer(-81)     
+17
+>>> add_integer(-10e10000)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/solomon/Desktop/ALX-software_engineering/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 11, in add_integer
+    return (int(a) + int(b))
+OverflowError: cannot convert float infinity to integer
+
+Testing characters(not int)
+===========================
+
+>>> add_integer('c')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/solomon/Desktop/ALX-software_engineering/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 8, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+>>> add_integer('c', 'b')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/solomon/Desktop/ALX-software_engineering/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 8, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+>>> add_integer(5, 'b')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/solomon/Desktop/ALX-software_engineering/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 10, in add_integer
+    raise TypeError("b must be an integer")
+TypeError: b must be an integer
+
+Testing lists
+==============
+
+>>> add_integer([1, 2, 3])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/solomon/Desktop/ALX-software_engineering/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 8, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+>>> add_integer(5, 'b')
+
+
