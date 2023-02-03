@@ -18,7 +18,7 @@ def matrix_divided(matrix, div):
         for n in lst:
             if not type(n) in [int, float]:
                 raise TypeError(err1)
-    if any([len(matrix[0]) != len(lst) for lst in matrix]):
+    if any((len(matrix[0]) != len(lst)) for lst in matrix]):
         raise TypeError(error2)
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
