@@ -20,3 +20,18 @@ def create_file_list():
         obj_9.append(str(sys.argv[i]))
 
     save_to_json_file(obj_9, "add_item.json")
+
+if len(sys.argv) < 2:
+    try:
+        f = open("add_item.json")
+        f.close()
+    except IOError:
+        save_to_json_file([], "add_item.json")
+else:
+    try:
+        f = open("add_item.json")
+        f.close()
+        create_file_list()
+    except IOError:
+        save_to_json_file([], "add_item.json")
+        create_file_list()
