@@ -21,6 +21,7 @@ def create_file_list():
 
     save_to_json_file(obj_9, "add_item.json")
 
+
 if len(sys.argv) < 2:
     try:
         f = open("add_item.json")
