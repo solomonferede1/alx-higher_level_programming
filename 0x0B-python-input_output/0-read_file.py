@@ -7,5 +7,5 @@ and prints to stdout
 
 def read_file(filename=""):
     """A function reads txt from the file"""
-    with open('filename', 'r', encoding="UTF-8") as f:
+    with open(filename, 'r', encoding="UTF-8") as f:
         print(f.read())
