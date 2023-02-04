@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The 0-read_file module - contains a function that reads file 
+The 0-read_file module - contains a function that reads file
 and prints to stdout
 """
 
