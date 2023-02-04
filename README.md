@@ -1,7 +1,7 @@
 # Higher level programming language
-**(C) by solomon ferede - software engineer at alx**
+```**Software engineering project at ALX school**```
 
-Higher level programming languges are include in this project repo
+## The higher level programming languges included are:
 - Python
 - JavaScript
 - CSS and HTML
@@ -15,4 +15,11 @@ Higher level programming languges are include in this project repo
 - 0x04-python-more_data_structures
 - 0x05-python-exceptions
 - 0x06-python-classes
-- 0x17-doubly_linked_lists
+- 0x07-python-test_driven_development
+- 0x08-python-more_classes
+- 0x09-python-everything_is_object
+- 0x0A-
+- 0x0B-python-input_output
+
+## Author
+**Solomon Ferede** - solomonf1227@gmail.com
