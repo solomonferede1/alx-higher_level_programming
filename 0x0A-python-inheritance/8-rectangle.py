@@ -5,7 +5,7 @@ create base class and define rectangle object
 """
 
 
-class BaseGeometry:
+class BaseGeometry():
     """ Create BaseGeometry class"""
 
     def area(self):
