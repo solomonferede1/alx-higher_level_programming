@@ -59,4 +59,26 @@ TypeError: '<' not supported between instances of 'int' and 'str'
 >>> lst6.print_sorted() 
 [-8.5, -2, 3, 6.3]
 >>> lst6
-[6.3, -2, 3, -8.5]
+[6.3, -2, 3, -8.5] 
+>>> lst7 = MyList("solomon", "Mekides", "Dani", "selam")   
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list expected at most 1 argument, got 4
+>>> lst8 = MyList(["solomon", "Mekides", "Dani", "selam"]) 
+>>> lst8
+['solomon', 'Mekides', 'Dani', 'selam']
+>>> lst8.print_sorted()
+['Dani', 'Mekides', 'selam', 'solomon']
+>>> lst8 = MyList(["selam"])                               
+>>> lst9 = MyList(["selam"]) 
+>>> lst9                     
+['selam']
+>>> lst9.print_sorted()
+['selam']
+>>> lst10 = MyList(['s', 'e', 'l'])   
+>>> lst10
+['s', 'e', 'l']
+>>> lst10.print_sorted()
+['e', 'l', 's']
+>>> lst10
+['s', 'e', 'l']
