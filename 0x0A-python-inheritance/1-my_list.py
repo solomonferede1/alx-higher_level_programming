@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Solomon
+# Solomon
 """
 1-my_list module
 contains a function that prints the sorted list
