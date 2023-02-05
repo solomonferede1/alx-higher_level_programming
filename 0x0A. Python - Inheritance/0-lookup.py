@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-0-lookup module
+0-lookup  module
 Define a function looking for the attributes and variables of the object
 """
 
