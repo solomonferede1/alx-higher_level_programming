@@ -7,7 +7,19 @@ This is a simple text file to test the ``1-my_list`` module
 Frist import ``MyList class from ``1-my_list`` module as 
 
 >>>MyList = __import__("1-my_list").MyList
+Correct Class Type test:
+    >>> ml = MyList()
+    >>> type(ml) == MyList
+    True
 
+Correct Instance test:
+    >>> ml = MyList()
+    >>> isinstance(ml, list)
+    True
+
+print_sorted method is an instance method:
+    >>> type(MyList.__dict__['print_sorted'])
+    <class 'function'>
 ===========================
 Then create a MyList object
 ===========================
