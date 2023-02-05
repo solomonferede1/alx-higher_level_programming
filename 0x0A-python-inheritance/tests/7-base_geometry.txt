@@ -26,11 +26,11 @@ Traceback (most recent call last):
   File "E:\ALX-software_engineering\alx-higher_level_programming\0x0A-python-inheritance\7-base_geometry.py", line 13, in area
     raise Exception("area() is not implemented")
 Exception: area() is not implemented
->>> bg.integer_validator()             
+>>> bg.integer_validator()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
->>> bg.integer_validator('age') 
+>>> bg.integer_validator('age')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
