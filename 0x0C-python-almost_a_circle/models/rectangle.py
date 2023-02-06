@@ -92,6 +92,6 @@ class Rectangle(Base):
 
     def __repr__(self):
         '''Return the internal representation of an object parsed by pyton'''
-        return "[Rectangle](" + str(self.id) + ')  ' + str(self.__x) +\
+        return "[Rectangle](" + str(self.id) + ') ' + str(self.__x) +\
         "/" + str(self.__y) + ' - ' + str(self.__width) + '/' +\
          str(self.__height)
