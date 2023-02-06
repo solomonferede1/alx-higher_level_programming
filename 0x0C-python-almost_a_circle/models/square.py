@@ -24,9 +24,9 @@ class Square(Rectangle):
         '''setter method for size'''
         self.width = value
         self.height = value
+
     def __str__(self):
         '''overwriten the __str__ method that inherint from Rectangle'''
 
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.height)
-    
