@@ -81,14 +81,9 @@ class Rectangle(Base):
 
     def display(self):
         """Prints in stdout the Rectangle instance with the character # """
-        string = ''
-        if self.__width == 0:
-            return string
-        for i in range(self.__height):
-            string += (self.__width * '#')
-            if i != self.__height - 1:
-                string += '\n'
-        print(string)
+        [print() for space in range(self.y)]
+        [print(" " * self.x + "#" * self.width)
+         for line in range(self.height)]
 
     def __repr__(self):
         '''Return the internal representation of an object parsed by pyton'''
