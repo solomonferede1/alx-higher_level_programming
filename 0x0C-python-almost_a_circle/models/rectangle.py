@@ -90,3 +90,20 @@ class Rectangle(Base):
         return "[Rectangle] (" + str(self.id) + ') ' + str(self.__x) +\
             "/" + str(self.__y) + ' - ' + str(self.__width) + '/' +\
             str(self.__height)
+
+    def update(self, *args):
+        """ Assigns an argument to each attribute:"""
+        index = 0
+        if len(args) > 0 and args:
+            for arg in args:
+                if index == 0:
+                    self.id = arg
+                elif index == 1:
+                    self.__width = arg
+                elif index == 2:
+                    self.height = arg
+                elif index == 3:
+                    self.__x = arg
+                elif index == 4:
+                    self.__y = arg
+                index += 1
