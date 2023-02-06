@@ -30,3 +30,28 @@ class Square(Rectangle):
 
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.height)
+    def update(self, *args, **kwargs):
+        '''Method for update all attributes in the class Square'''
+
+        if len(args) > 0 and args:
+            index = 0
+            for i in args:
+                if index == 0:
+                    self.id = i
+                elif index == 1:
+                    self.size = i
+                elif index == 2:
+                    self.x = i
+                elif index == 3:
+                    self.y = i
+                index += 1
+        else:
+            for key, value in kwargs.items():
+                if key == 'id':
+                    self.id = value
+                elif key == 'size':
+                    self.size = value
+                elif key == 'x':
+                    self.x = value
+                elif key == 'y':
+                    self.y = value
