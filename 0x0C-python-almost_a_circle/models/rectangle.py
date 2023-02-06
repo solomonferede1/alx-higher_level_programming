@@ -81,4 +81,3 @@ class Rectangle(Base):
 
     def display(self):
         """Prints in stdout the Rectangle instance with the character # """
-        
