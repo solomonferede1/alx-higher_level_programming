@@ -1,6 +1,7 @@
 #!/usr/bin/node
 //  script that concats 2 files.
 
+const process = require('process');
 const files = require('files');
 const file1 = files.readFileSync(process.argv[2], 'utf8');
 const file2 = files.readFileSync(process.argv[3], 'utf8');
