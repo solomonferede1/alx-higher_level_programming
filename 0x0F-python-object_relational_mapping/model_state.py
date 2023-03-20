@@ -17,8 +17,6 @@ import sys
 
 
 Base = declarative_base()
-url = 'mysql+mysqldb://sys.argv[1]:sys.argv[2]@localhost/sys.argv[3]'
-engine = create_engine(url, echo=True)
 
 
 class State(Base):
@@ -35,4 +33,3 @@ class State(Base):
                 primary_key=True)
     name = Column(String(128), nullable=False)
 
-Base.metadata.create_all(engine)
