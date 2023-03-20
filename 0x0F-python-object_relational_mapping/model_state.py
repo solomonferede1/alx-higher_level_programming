@@ -16,11 +16,9 @@ from sqlalchemy import String, Integer, Column
 import sys
 
 
-url = 'mysql+mysqldb://{}:{}@localhost/  {}'.format(sys.argv[1],
-                                                    sys.argv[2], sys.argv[3])
-engine = create_engine(url)
-
 Base = declarative_base()
+url = 'mysql+mysqldb://sys.argv[1]:sys.argv[2]@localhost/sys.argv[3]'
+engine = create_engine(url, echo=True)
 
 
 class State(Base):
