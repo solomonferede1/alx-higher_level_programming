@@ -18,7 +18,8 @@ def _States():
                 format(sys.argv[4]))
     States = cur.fetchall()
     for state in States:
-        print(state)
+        if (state[1] == sys.argv[4]):
+            print(state)
     cur.close()
     db.close()
 
