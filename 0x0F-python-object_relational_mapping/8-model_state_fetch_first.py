@@ -16,9 +16,9 @@ import sys
 
 def fetch_first_state():
     """prints the first State object from the database"""
-    url = "mysql://{}:{}@localhost:3306/{}"\
+    url = "mysql+mysqldb://{}:{}@localhost:3306/{}"\
         .format(sys.argv[1], sys.argv[2], sys.argv[3])
-    engine = create_engine(url, echo=True)
+    engine = create_engine(url, echo=False)
     Session = sessionmaker(bind=engine)
     session = Session()
 
