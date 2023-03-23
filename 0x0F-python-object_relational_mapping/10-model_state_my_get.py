@@ -22,9 +22,9 @@ def search_state_by_name():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    result = session.query(State.id).filter(State.name == (sys.argv[4], )).first()
-    if result is not None:
-        print(result[0])
+    res = session.query(State.id).filter(State.name == (sys.argv[4], )).first()
+    if res is not None:
+        print(res[0])
     else:
         print("Not found")
 
