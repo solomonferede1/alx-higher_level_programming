@@ -22,7 +22,7 @@ def fetch_first_state():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    instance = session.query(State).order_by(State.id).first()
+    instance = session.query(State).first()
     if (instance):
         print("{}: {}".format(instance.id, instance.name))
     else:
