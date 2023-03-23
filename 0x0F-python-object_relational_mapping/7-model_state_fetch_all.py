@@ -16,7 +16,7 @@ import sys
 def list_states():
     """ists all State objects from the database"""
 
-    url = "mysql://{}:{}@localhost:3306/{}"\
+    url = "mysql+mysqldb://{}:{}@localhost:3306/{}"\
         .format(sys.argv[1], sys.argv[2], sys.argv[3])
     engine = create_engine(url, echo=True)
     Session = sessionmaker(bind=engine)
