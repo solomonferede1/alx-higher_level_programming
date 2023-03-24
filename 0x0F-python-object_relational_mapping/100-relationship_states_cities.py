@@ -24,7 +24,7 @@ def create_state():
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    
+
     new_city = City(name="San Francisco", state=State(name="California"))
     session.add(new_city)
     session.commit()
