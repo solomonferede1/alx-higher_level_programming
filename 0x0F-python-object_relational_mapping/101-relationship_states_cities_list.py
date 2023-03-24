@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 """
-=====================================
-100-relationship_states_cites module
-=====================================
-creates the State “California” with the City “San Francisco”
-from the database hbtn_0e_100_usa
-"""
+the 101-relationship_states_cities_list module
 
+"""
 from sqlalchemy import create_engine
 from relationship_state import Base, State
 from relationship_city import City
