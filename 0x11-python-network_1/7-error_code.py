@@ -17,4 +17,4 @@ if __name__ == "__main__":
         if resp.status_code < 400:
             print(resp.text)
     except requests.exceptions.HTTPError as err:
-        print("Error code:", err.errno)
+        print("Error code:", err.args[0])
