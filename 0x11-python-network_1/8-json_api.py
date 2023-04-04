@@ -11,7 +11,7 @@ if __name__ == "__main__":
     import sys
 
     url = 'http://0.0.0.0:5000/search_user'
-    if sys.argv[1]:
+    if len(sys.argv) >= 2:
         Q = sys.argv[1]
     else:
         Q = ""
