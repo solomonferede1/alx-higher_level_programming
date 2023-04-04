@@ -6,7 +6,7 @@ handle errors in http request using python
 
 
 from urllib import request
-from urllib.error import HTTPError, URLError
+from urllib.error import HTTPError
 import sys
 
 
