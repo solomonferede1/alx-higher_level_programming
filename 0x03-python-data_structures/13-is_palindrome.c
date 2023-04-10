@@ -11,10 +11,11 @@ int is_palindrome(listint_t **head)
         int i;
         int *ptr;
         int capacity = 100;
+        listint_t *tmp;
 
         ptr = malloc(capacity * sizeof(int));
         i = 0;
-        listint_t *tmp = *head;
+        tmp = *head;
 
         while (tmp != NULL)
         {
