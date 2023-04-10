@@ -9,20 +9,26 @@
 int is_palindrome(listint_t **head)
 {
         int i;
-        int *ptr = NULL;
+        int *ptr;
+        int capacity = 100;
 
+        ptr = malloc(capacity * sizeof(int));
         i = 0;
         listint_t *tmp = *head;
 
         while (tmp != NULL)
         {
-                ptr = realloc(ptr, (i + 1) * sizeof(int));
+                if (i > capacity)
+                {
+                        capacity = 2 * capacity;
+                        ptr = realloc(ptr, capacity * sizeof(int));
+                }
                 ptr[i] = tmp->n;
                 tmp = tmp->next;
                 i++;
         }
 
-        while ((*head) != NULL || i == 0)
+        while ((*head) != NULL)
         {
                 i--;
                 if ((*head)->n != ptr[i])
