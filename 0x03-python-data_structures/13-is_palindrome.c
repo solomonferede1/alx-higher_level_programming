@@ -21,7 +21,7 @@ int is_palindrome(listint_t **head)
         {
                 if (i > capacity)
                 {
-                        capacity = i;
+                        capacity = i + 1;
                         ptr = realloc(ptr, capacity * sizeof(int));
                 }
                 ptr[i] = tmp->n;
