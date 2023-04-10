@@ -10,7 +10,7 @@ int is_palindrome(listint_t **head)
 {
         int i;
         int *ptr;
-        int capacity = 100;
+        int capacity = 1;
         listint_t *tmp;
 
         ptr = malloc(capacity * sizeof(int));
@@ -21,7 +21,7 @@ int is_palindrome(listint_t **head)
         {
                 if (i > capacity)
                 {
-                        capacity = 2 * capacity;
+                        capacity = i;
                         ptr = realloc(ptr, capacity * sizeof(int));
                 }
                 ptr[i] = tmp->n;
