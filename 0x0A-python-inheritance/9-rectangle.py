@@ -30,10 +30,6 @@ class Rectangle(BaseGeometry):
         """Determine the area of rectangle"""
         return (self.__width * self.__height)
 
-    def print(self):
-        """Print the rectangle object"""
-        print("[Rectangle] {}/{}".format(self.__width, self.__height))
-
     def __str__(self):
         """Return the str representation of Rectangle object"""
         return ("[Rectangle] {}/{}".format(self.__width, self.__height))
