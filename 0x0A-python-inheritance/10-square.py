@@ -22,9 +22,13 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """"instantiation of width and height"""
-        super(BaseGeometry, self).integer_validator('size', size)
+        BaseGeometry.integer_validator(self, 'size', size)
         self.__size = size
 
     def area(self):
         """Determine the area of rectangle"""
         return (self.__size ** 2)
+
+    def __str__(self):
+        """Return the str representation of Rectangle object"""
+        return ("[Square] {}/{}".format(self.__size, self.__size))
