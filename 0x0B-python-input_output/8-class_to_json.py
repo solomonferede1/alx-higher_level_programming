@@ -2,7 +2,6 @@
 """
 The 8-class_to_json which converts object to json
 """
-import json
 
 
 def class_to_json(obj):
