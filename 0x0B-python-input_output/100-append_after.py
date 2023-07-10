@@ -9,7 +9,7 @@ a specific string (see example):
 def append_after(filename="", search_string="", new_string=""):
     """Append a line after a string containing line"""
 
-    with open(filename, mode='+a', encoding='utf-8') as fp:
+    with open(filename, mode='r+', encoding='utf-8') as fp:
         all_lines = fp.readlines()
         fp.seek(0)
         for line in all_lines:
