@@ -8,6 +8,7 @@ import sys
 from collections import defaultdict
 
 def compute_metrics():
+    """Compute the matrics"""
     total_size = 0
     status_codes = defaultdict(int)
     line_count = 0
@@ -34,6 +35,7 @@ def compute_metrics():
         print_statistics(total_size, status_codes)
 
 def print_statistics(total_size, status_codes):
+    """print the statistics after reading"""
     print("Total file size:", total_size)
     
     for code in sorted(status_codes.keys()):
