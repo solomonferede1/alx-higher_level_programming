@@ -13,7 +13,7 @@ def append_after(filename="", search_string="", new_string=""):
         all_lines = fp.readlines()
         fp.seek(0)
         for line in all_lines:
-            fp.writeline(line)
+            fp.write(line)
             if search_string in line:
-                fp.writeline(new_string, '\n')
+                fp.write(new_string, '\n')
         fp.truncate()
