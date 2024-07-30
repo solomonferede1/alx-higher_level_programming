@@ -12,11 +12,8 @@ const url = `https://swapi-api.alx-tools.com/api/films/${movieId}/`;
 request.get(url, { json: true }, (error, response, body) => {
   if (error) {
     console.error(error);
-  } else if (response.statusCode === 200) {
+  } else {
     // Successfully received the response
     console.log(`Title: ${body.title}`);
-  } else {
-    // Handle non-200 status codes
-    console.error(`Failed to fetch data. Status Code: ${response.statusCode}`);
   }
 });
