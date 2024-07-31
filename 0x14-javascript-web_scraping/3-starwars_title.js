@@ -14,6 +14,6 @@ request.get(url, { json: true }, (error, response, body) => {
     console.error(error);
   } else {
     // Successfully received the response
-    console.log(`Title: ${body.title}`);
+    console.log(body.title);
   }
 });
