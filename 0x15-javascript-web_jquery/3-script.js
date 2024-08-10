@@ -1,1 +1,2 @@
-$('DIV#red_header').click(() => $('this').addClass('red'));
+/* global $ */
+$('div#red_header').click(() => $('header').addClass('red'));

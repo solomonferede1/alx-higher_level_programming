@@ -1,1 +1,2 @@
-$("header").css('color', "#ff0000");
+/* global $ */
+$('header').css('color', '#ff0000');
